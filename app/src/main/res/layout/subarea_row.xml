@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_row"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:src="@drawable/page_simple" />
+
+    <TextView
+        android:id="@+id/area_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@+id/icon"
+        android:text="Chiller 1"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:src="@drawable/lock_icon" />
+
+</RelativeLayout>

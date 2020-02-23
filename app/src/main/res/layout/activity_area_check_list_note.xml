@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.plantlogger.activities.SubAreasActivity">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Add Note"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/breadCrum"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#f5f5f5"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="Logs / Chillers"
+        android:textSize="11dp" />
+
+    <EditText
+        android:id="@+id/note_area"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_margin="22dp"
+        android:inputType="text"
+        android:background="@drawable/note_edittext"
+        android:gravity="top|left"
+        android:hint="[Tap to Enter a Note]"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_btn"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.plantlogger.activities.SubAreasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary">
+
+
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/back_icon" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/info"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true">
+
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/info_icon" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/breadCrum"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#f5f5f5"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Logs / Chillers"
+            android:textSize="11dp" />
+
+        <com.plantlogger.utils.KeyboardView
+            android:id="@+id/note_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="22dp"
+            android:background="@drawable/note_edittext"
+            android:digits="0123456789.-"
+            android:gravity="top|left"
+            android:hint="Data Entry Area"
+            android:imeOptions="actionDone"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:background="@drawable/note_edittext"
+            android:visibility="gone"/>
+
+        <com.thomashaertel.widget.MultiSpinner
+            android:id="@+id/spinnerMulti"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="22dp"
+            android:hint="Select from the options"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/login_btn"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/check"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Item not working" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_btn"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</ScrollView>
